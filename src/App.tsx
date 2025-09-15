@@ -73,6 +73,7 @@ import Service from './pages/Services';
 import Abouts from './pages/About';
 import Vision from './pages/Visionmission';
 import Messages from './pages/Messages';
+import Contact from './pages/contact';
 
 function App() {
   return (
@@ -138,6 +139,7 @@ function App() {
               <Route path="/about" element={<Abouts />} />
               <Route path="/vision" element={<Vision />} />
               <Route path="/messages" element={<Messages />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/emergencyandtraumacare" element={<Emergencyandtraumacare/>} />
               <Route path="/parmacy" element={<Pharmacy/>} />
               <Route path="/laboratory" element={<Laboratory/>} /> 

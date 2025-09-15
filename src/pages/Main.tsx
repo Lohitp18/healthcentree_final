@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Heart, Shield, Users, Award, Clock, MapPin, Phone, Star, CheckCircle, TrendingUp, Stethoscope, Brain, Eye, ChevronLeft, ChevronRight, MessageSquare } from 'lucide-react';
+import { ArrowRight, Heart, Shield, Users, Award, Clock, MapPin, Phone, Star, TrendingUp, Stethoscope, Brain, Eye, ChevronLeft, ChevronRight, MessageSquare } from 'lucide-react';
 import img1 from "../images/40 YEARS_20250806_093912_0000.png";
 import about from "../images/about.png"
 import chairman from "../images/chairman.webp"
@@ -380,6 +380,105 @@ const QuickLinks = () => (
 );
 
 
+const ServicesHighlights = () => (
+  <Section id="services" className="bg-white">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold text-gray-900 mb-4">Comprehensive Services</h2>
+      <p className="text-gray-600">From prevention to advanced treatment and rehabilitation</p>
+    </div>
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {[{
+        icon: Stethoscope,
+        title: 'General Medicine',
+        desc: 'Primary and preventive care for all ages',
+        href: '/medicine/GeneralMedicine'
+      },{
+        icon: Heart,
+        title: 'Cardiology',
+        desc: 'Advanced heart care and interventions',
+        href: '/medicine/Cardiology'
+      },{
+        icon: Brain,
+        title: 'Neurology',
+        desc: 'Brain and nervous system care',
+        href: '/medicine/Neurology'
+      },{
+        icon: Shield,
+        title: 'Emergency Care',
+        desc: '24/7 emergency and trauma services',
+        href: '/emergencyandtraumacare'
+      }].map((s, i) => (
+        <a key={i} href={s.href} className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition group">
+          <s.icon className="text-blue-600 mb-4 group-hover:scale-110 transition" size={36} />
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">{s.title}</h3>
+          <p className="text-gray-600 text-sm">{s.desc}</p>
+        </a>
+      ))}
+    </div>
+  </Section>
+);
+
+const FacilitiesShowcase = () => (
+  <Section id="facilities" className="bg-gray-50">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold text-gray-900 mb-4">World-class Facilities</h2>
+      <p className="text-gray-600">Modern OT, NICU, advanced imaging, laboratory and endoscopy suites</p>
+    </div>
+    <div className="grid md:grid-cols-3 gap-6">
+      {[{
+        title: 'Modular Operation Theatres', image: ot1
+      },{ title: 'Advanced Imaging', image: 'https://images.pexels.com/photos/7089028/pexels-photo-7089028.jpeg?auto=compress&cs=tinysrgb&w=1200' },{ title: '24/7 Laboratory', image: 'https://images.pexels.com/photos/3735769/pexels-photo-3735769.jpeg?auto=compress&cs=tinysrgb&w=1200' }].map((f, i) => (
+        <div key={i} className="bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition">
+          <img src={f.image} alt={f.title} className="w-full h-48 object-cover" />
+          <div className="p-4">
+            <h3 className="font-semibold text-gray-900">{f.title}</h3>
+          </div>
+        </div>
+      ))}
+    </div>
+  </Section>
+);
+
+const MapSection = () => (
+  <Section id="map" className="bg-white">
+    <div className="text-center mb-8">
+      <h2 className="text-3xl font-bold text-gray-900 mb-2 flex items-center justify-center gap-2"><MapPin /> Find Us</h2>
+      <p className="text-gray-600">We’re easy to reach. Parking available on-site.</p>
+    </div>
+    <div className="rounded-2xl overflow-hidden shadow">
+      <iframe
+        title="Hospital Location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.948483950989!2d74.986!3d13.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAlva%27s%20Health%20Centre!5e0!3m2!1sen!2sin!4v1700000000000"
+        width="100%"
+        height="420"
+        style={{ border: 0 }}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        className="w-full h-[420px]"
+      ></iframe>
+    </div>
+  </Section>
+);
+
+const ContactCTA = () => (
+  <Section id="appointment" className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-none">
+    <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+      <div>
+        <h2 className="text-3xl font-bold mb-2">Need Medical Assistance?</h2>
+        <p className="text-blue-100">Call our helpline or book an appointment online.</p>
+      </div>
+      <div className="flex gap-3">
+        <a href="tel:+919999999999" className="inline-flex items-center px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg shadow hover:shadow-lg transition">
+          <Phone size={18} className="mr-2" /> +91 99999 99999
+        </a>
+        <a href="/appointment" className="inline-flex items-center px-6 py-3 bg-blue-800 hover:bg-blue-900 text-white font-semibold rounded-lg transition">
+          Book Appointment
+        </a>
+      </div>
+    </div>
+  </Section>
+);
+
 const App = () => {
   return (
     <>
@@ -388,6 +487,10 @@ const App = () => {
       <About />
       <Messages />
       <QuickLinks />
+      <ServicesHighlights />
+      <FacilitiesShowcase />
+      <MapSection />
+      <ContactCTA />
     </>
   );
 };

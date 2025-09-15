@@ -13,7 +13,7 @@ const HospitalVisionMission = () => {
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
-            Best Care Hospital
+            Alva’s Health Centre
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Leading healthcare excellence with compassion, innovation, and unwavering commitment to patient care
@@ -31,7 +31,7 @@ const HospitalVisionMission = () => {
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white">Our Vision</h2>
               </div>
               <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed text-center max-w-3xl mx-auto">
-                Delivering the safe and highest quality of care to the patient for better & healthier life.
+                To deliver safe, high-value care with compassion and clinical excellence so every patient lives a healthier life.
               </p>
             </div>
           </div>
@@ -48,9 +48,9 @@ const HospitalVisionMission = () => {
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white">Our Mission</h2>
               </div>
               <ul className="list-disc list-inside text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8 space-y-2">
-                <li>Promote health and reduce illness</li>
-                <li>Providing quality of service & cost effective healthcare</li>
-                <li>We take responsibility to ensuring that sustainable, patient centered and high quality healthcare is provided at all time</li>
+                <li>Prevent disease and promote wellness across all ages</li>
+                <li>Keep care affordable, accessible, ethical, and patient-centred</li>
+                <li>Improve outcomes through training, audit, and innovation</li>
               </ul>
               <div className="grid md:grid-cols-3 gap-6 mt-8">
                 <div className="text-center">
@@ -90,44 +90,44 @@ const HospitalVisionMission = () => {
             {[
               {
                 icon: Heart,
-                title: "Always caring the patient",
-                description: "We treat every patient with kindness, empathy, and understanding",
+                title: "Compassion",
+                description: "Kindness, respect, and dignity in every interaction",
                 color: "from-red-500 to-pink-500"
               },
               {
                 icon: Shield,
-                title: "Leading through learning",
-                description: "We uphold the highest ethical standards in all our interactions",
+                title: "Integrity",
+                description: "Ethical, transparent, and safe care always",
                 color: "from-blue-500 to-cyan-500"
               },
               {
                 icon: Award,
-                title: "Validate patient expectations & concerns",
-                description: "We strive for the highest quality in medical care and service",
+                title: "Quality",
+                description: "Relentless focus on outcomes and experience",
                 color: "from-yellow-500 to-orange-500"
               },
               {
                 icon: Users,
-                title: "Always first priority given to the patient",
-                description: "We work together as a team to achieve the best patient outcomes",
+                title: "Teamwork",
+                description: "Multidisciplinary collaboration for the best outcomes",
                 color: "from-green-500 to-emerald-500"
               },
               {
                 icon: Heart,
-                title: "Safety, Smile, Greet and Respect",
-                description: "Achieving the best results in what we do",
+                title: "Safety",
+                description: "Do-no-harm culture with robust protocols",
                 color: "from-red-600 to-pink-600"
               },
               {
                 icon: Award,
-                title: "Leadership that sets the standards",
-                description: "Leadership that sets the standards for better health care today & innovation for future",
+                title: "Learning",
+                description: "Grow people, improve systems, embrace innovation",
                 color: "from-yellow-600 to-orange-600"
               },
               {
                 icon: Users,
-                title: "Value others & embrace diversity",
-                description: "We accept responsibility for caring patient",
+                title: "Respect",
+                description: "Value diversity and individual preferences",
                 color: "from-green-600 to-emerald-600"
               },
               {

@@ -1,9 +1,13 @@
 // src/pages/ENT.tsx
 import React from 'react';
+import entImg from "../../images/dr hihal.jpg";
 
 const ENT = () => {
   return (
     <div className="p-8 max-w-5xl mx-auto bg-gray-50 rounded-lg shadow-md space-y-10 font-serif">
+      <div className="rounded-xl overflow-hidden shadow">
+        <img src={entImg} alt="ENT" className="w-full h-56 object-cover" />
+      </div>
       {/* Full-width heading */}
       <h1 className="bg-blue-900 text-white text-4xl font-extrabold px-4 py-2 mb-6 block w-full">
         OVERVIEW - ENT (Ear, Nose, Throat & Head & Neck Surgery)
@@ -91,6 +95,21 @@ const ENT = () => {
           <li>Voice & speech therapy</li>
           <li>Imaging support (CT, MRI for ENT conditions)</li>
         </ul>
+      </section>
+
+      <section className="bg-white p-6 rounded-lg shadow-sm">
+        <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-b border-blue-200 pb-2">Our Doctors</h2>
+        <div className="grid sm:grid-cols-2 gap-6">
+          {[{ name: 'Dr. Anchitha', role: 'Consultant ENT', img: require('../../images/dr anchitha.webp') }, { name: 'Dr. Chaithra', role: 'ENT Specialist', img: require('../../images/dr chaithra.jpg') }].map((d: any, i: number) => (
+            <div key={i} className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border">
+              <img src={d.img} alt={d.name} className="w-20 h-20 object-cover rounded-full shadow" />
+              <div>
+                <div className="font-semibold text-gray-900">{d.name}</div>
+                <div className="text-sm text-gray-600">{d.role}</div>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );

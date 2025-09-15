@@ -1,12 +1,14 @@
-// src/pages/GeneralMedicine.tsx
+// src/pages/medicine/Oncology.tsx
 import React from 'react';
+import oncoImg from "../../images/dr-sanal-fernandes-medical-oncologist-in-mangalore.png";
 
-const GeneralMedicine = () => {
+const Oncology = () => {
   return (
     <div className="p-8 max-w-5xl mx-auto bg-gray-50 rounded-lg shadow-lg space-y-10 font-serif">
-      <h1 className="bg-blue-900 text-white text-4xl font-extrabold px-4 py-2 mb-6 block w-full">
-        OVERVIEW - ONCOLOGY & ONCOSURGERY
-      </h1>
+      <div className="rounded-xl overflow-hidden shadow">
+        <img src={oncoImg} alt="Oncology" className="w-full h-56 object-cover" />
+      </div>
+      <h1 className="bg-blue-900 text-white text-4xl font-extrabold px-4 py-2 mb-2 block w-full">OVERVIEW - ONCOLOGY & ONCOSURGERY</h1>
 
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <p className="text-gray-800 text-lg leading-relaxed tracking-wide">
@@ -107,4 +109,4 @@ const GeneralMedicine = () => {
   );
 };
 
-export default GeneralMedicine;
+export default Oncology;

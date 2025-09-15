@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
               <img
                 src={logo}
                 alt="Alva's Logo"
-                className="h-12 w-12 sm:h-16 sm:w-16 rounded-full object-cover"
+                className="h-20 w-14 sm:h-16 sm:w-16  "
               />
             </div>
 

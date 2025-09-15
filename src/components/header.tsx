@@ -96,7 +96,7 @@ const Header: React.FC = () => {
     },
     { name: 'Doctors', href: '/doctor' },
     { name: 'Medical College', href: '/medicalcollege' },
-    { name: 'Contact Us', href: '/contactus' },
+    { name: 'Contact Us', href: '/contact' },
   ];
 
   return (

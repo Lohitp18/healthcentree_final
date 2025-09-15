@@ -1,18 +1,35 @@
-// src/pages/GeneralMedicine.tsx
+// src/pages/Radiology.tsx
 import React from 'react';
+import xray from "../../images/xray1.jpg";
 
-const GeneralMedicine = () => {
+const Radiology = () => {
   return (
-    <div className="p-6 max-w-5xl mx-auto">
-      <h1 className="text-3xl font-bold text-blue-700 mb-4"> RADIOLOGY</h1>
-      <p className="text-gray-700 text-lg leading-relaxed">
-       
+    <div className="p-8 max-w-5xl mx-auto bg-gray-50 rounded-lg shadow-md space-y-10 font-serif">
+      <div className="rounded-xl overflow-hidden shadow">
+        <img src={xray} alt="Radiology" className="w-full h-56 object-cover" />
+      </div>
 
- Our team of radiologists and technicians utilize state-of-the-art equipment, including X-rays, CT scans, and ultrasound, to provide high-quality imaging studies. From detecting fractures and tumors to assessing internal organ function, we deliver precise and timely results to support patient care across various medical specialties. With a commitment to excellence and patient-centered care, we strive to optimize health outcomes through advanced imaging technology. 
+      <h1 className="bg-blue-900 text-white text-4xl font-extrabold px-4 py-2 mb-2 block w-full">OVERVIEW - RADIOLOGY</h1>
+      
+      <section className="bg-white p-6 rounded-lg shadow-sm">
+        <p className="text-gray-800 text-lg leading-relaxed tracking-wide">
+          Our radiology department supports clinical teams with accurate, timely imaging using modern
+          X-ray, ultrasound, CT and MRI modalities, following radiation safety and quality protocols.
+        </p>
+      </section>
 
-      </p>
+      <section className="bg-white p-6 rounded-lg shadow-sm">
+        <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-b border-blue-200 pb-2">Services</h2>
+        <ul className="list-disc list-inside ml-6 space-y-2 text-gray-700 leading-relaxed tracking-wide">
+          <li>Digital X-ray and portable radiography</li>
+          <li>Ultrasound and Doppler studies</li>
+          <li>CT scan for trauma, neuro, chest and abdomen</li>
+          <li>MRI for neuro, musculoskeletal and soft tissue</li>
+          <li>Image-guided procedures and biopsies</li>
+        </ul>
+      </section>
     </div>
   );
 };
 
-export default GeneralMedicine;
+export default Radiology;

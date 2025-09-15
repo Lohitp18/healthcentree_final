@@ -1,12 +1,14 @@
-// src/pages/GeneralMedicine.tsx
+// src/pages/medicine/Psychiatry.tsx
 import React from 'react';
+import careImg from "../../images/fit1.jpg";
 
-const GeneralMedicine = () => {
+const Psychiatry = () => {
   return (
     <div className="p-8 max-w-5xl mx-auto bg-gray-50 rounded-lg shadow-lg space-y-10 font-serif">
-      <h1 className="bg-blue-900 text-white text-4xl font-extrabold px-4 py-2 mb-6 block w-full">
-        OVERVIEW - PSYCHIATRY
-      </h1>
+      <div className="rounded-xl overflow-hidden shadow">
+        <img src={careImg} alt="Psychiatry" className="w-full h-56 object-cover" />
+      </div>
+      <h1 className="bg-blue-900 text-white text-4xl font-extrabold px-4 py-2 mb-2 block w-full">OVERVIEW - PSYCHIATRY</h1>
 
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <p className="text-gray-800 text-lg leading-relaxed tracking-wide">
@@ -108,4 +110,4 @@ const GeneralMedicine = () => {
   );
 };
 
-export default GeneralMedicine;
+export default Psychiatry;

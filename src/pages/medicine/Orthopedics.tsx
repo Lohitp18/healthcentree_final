@@ -1,9 +1,13 @@
-// src/pages/GeneralMedicine.tsx
+// src/pages/Orthopedics.tsx
 import React from 'react';
+import ot from "../../images/Ot3.jpg";
 
-const GeneralMedicine = () => {
+const Orthopedics = () => {
   return (
     <div className="p-8 max-w-5xl mx-auto bg-gray-50 rounded-lg shadow-md space-y-10 font-serif">
+      <div className="rounded-xl overflow-hidden shadow">
+        <img src={ot} alt="Orthopedics" className="w-full h-56 object-cover" />
+      </div>
       {/* <h1 className="text-4xl font-extrabold text-blue-700 border-b-4 border-blue-500 pb-3 mb-6">
         ORTHOPEDICS
       </h1>
@@ -80,8 +84,33 @@ const GeneralMedicine = () => {
           </ul>
         </div>
       </section>
+      <section className="bg-white p-6 rounded-lg shadow-sm">
+        <h3 className="text-3xl font-semibold text-blue-600 mb-3">Treatments & Procedures</h3>
+        <ul className="list-disc list-inside ml-6 space-y-2 text-gray-700 leading-relaxed tracking-wide">
+          <li>Joint replacement: hip, knee, shoulder</li>
+          <li>Arthroscopy for knee, shoulder, ankle</li>
+          <li>Trauma care: fracture fixation and ligament repair</li>
+          <li>Spine surgery: discectomy, fusion, deformity correction</li>
+          <li>Sports injury management and rehab</li>
+        </ul>
+      </section>
+
+      <section className="bg-white p-6 rounded-lg shadow-sm">
+        <h3 className="text-3xl font-semibold text-blue-600 mb-3">Our Doctors</h3>
+        <div className="grid sm:grid-cols-2 gap-6">
+          {[{ name: 'Dr. Krishna B', role: 'Orthopedic Surgeon', img: require('../../images/dr krishna.jpg') }, { name: 'Dr. Arun Bhat', role: 'Consultant Orthopedics', img: require('../../images/dr arun bhat.jpg') }].map((d: any, i: number) => (
+            <div key={i} className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border">
+              <img src={d.img} alt={d.name} className="w-20 h-20 object-cover rounded-full shadow" />
+              <div>
+                <div className="font-semibold text-gray-900">{d.name}</div>
+                <div className="text-sm text-gray-600">{d.role}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };
 
-export default GeneralMedicine;
+export default Orthopedics;
