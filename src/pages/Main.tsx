@@ -3,6 +3,8 @@ import { ArrowRight, Heart, Shield, Users, Award, Clock, MapPin, Phone, Star, Ch
 import img1 from "../images/40 YEARS_20250806_093912_0000.png";
 import about from "../images/about.png"
 import chairman from "../images/chairman.webp"
+import ot1 from "../images/Ot1.jpg"
+import blood2 from "../images/blood2.jpg"
 
 const Section = ({ id, className = '', children }: { 
   id: string; 
@@ -37,11 +39,18 @@ const ImageSlider = () => {
       cta: "Meet Our Doctors"
     },
     {
-      image: "https://images.pexels.com/photos/668300/pexels-photo-668300.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop",
+      image: ot1,
       title: "24/7 Emergency Care",
       subtitle: "Round-the-clock emergency services with rapid response teams",
       cta: "Emergency Services"
+    },
+    {
+      image: blood2,
+      title: "Advanced Medical Facilities",
+      subtitle: "State of the art infrastructure ensuring safe and quality healthcare",
+      
     }
+
   ];
 
   useEffect(() => {
@@ -93,13 +102,13 @@ const ImageSlider = () => {
               <p className="text-xl lg:text-2xl text-black mb-8 leading-relaxed">
                 {slide.subtitle}
               </p>
-              <a
+              {/* <a
                 href="/about"
                 className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 {slide.cta}
                 <ArrowRight className="ml-2" size={20} />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -143,11 +152,11 @@ const ImageSlider = () => {
   <div className="absolute bottom-20 right-8 bg-white/95 backdrop-blur-sm p-6 rounded-xl shadow-xl hidden lg:block font-serif">
     <div className="grid grid-cols-3 gap-6 text-center">
       <div>
-        <div className="text-2xl font-bold text-black mb-1">35+</div>
+        <div className="text-2xl font-bold text-black mb-1">40</div>
         <div className="text-xs text-gray-800">Years Experience</div>
       </div>
       <div>
-        <div className="text-2xl font-bold text-black mb-1">50K+</div>
+        <div className="text-2xl font-bold text-black mb-1">100K+</div>
         <div className="text-xs text-gray-800">Patients Treated</div>
       </div>
       <div>
@@ -178,7 +187,7 @@ const Hero = () => (
           cutting-edge technology, and patient-centered approach to healing.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <a
+          {/* <a
             href="#appointment"
             className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
           >
@@ -189,11 +198,11 @@ const Hero = () => (
             className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold rounded-lg transition-all duration-200"
           >
             View Our Services
-          </a>
+          </a> */}
         </div>
         
         {/* Trust Indicators */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto pt-8 border-t border-gray-200">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto pt-8 border-t border-gray-200">
           <div className="text-center">
             <div className="text-3xl font-bold text-blue-600 mb-1">50K+</div>
             <div className="text-sm text-gray-600">Patients Treated</div>
@@ -206,7 +215,7 @@ const Hero = () => (
             <div className="text-3xl font-bold text-blue-600 mb-1">24/7</div>
             <div className="text-sm text-gray-600">Emergency Care</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   </section>
@@ -222,7 +231,7 @@ const About = () => (
         </div>
         <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
           Leading Healthcare Excellence for Over 
-          <span className="text-blue-600"> 35 Years</span>
+          <span className="text-blue-600"> 40 Years</span>
         </h2>
         <p className="text-lg text-gray-600 mb-8 leading-relaxed">
           Alva's Health Centre stands as a beacon of medical excellence, combining 
@@ -277,7 +286,7 @@ const About = () => (
         />
         <div className="absolute -top-6 -right-6 bg-blue-600 text-white p-6 rounded-xl shadow-xl">
           <div className="text-center">
-            <div className="text-3xl font-bold mb-1">35+</div>
+            <div className="text-3xl font-bold mb-1">40</div>
             <div className="text-sm">Years of Excellence</div>
           </div>
         </div>
@@ -295,7 +304,7 @@ const Messages = () => (
         <div className="w-12 h-1 bg-blue-600"></div>
       </div>
       <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
-        A Message from Our <span className="text-blue-600">Director</span>
+        A Message from Our <span className="text-blue-600">Chairman</span>
       </h2>
       <p className="text-xl text-gray-600 max-w-3xl mx-auto">
         Our commitment to patient well-being and medical innovation drives everything we do.
@@ -312,7 +321,7 @@ const Messages = () => (
         <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-xl shadow-xl">
           <div className="text-center">
             <div className="text-2xl font-bold mb-1">Dr.Mohan Alva</div>
-            <div className="text-sm">Hospital Director</div>
+            <div className="text-sm">Chairman</div>
           </div>
         </div>
       </div>
@@ -322,7 +331,7 @@ const Messages = () => (
           "At Alva's Health Centre, we believe in a holistic approach to healthcare, where advanced medical science meets genuine human compassion. Our mission is to not only treat illnesses but to foster a community of wellness, ensuring every patient receives personalized, world-class care. We are constantly striving for excellence, investing in the latest technology and nurturing a team of dedicated professionals who share our vision for a healthier future."
         </blockquote>
         <p className="text-lg text-gray-700 mb-8">
-          — Dr. Alva, Director, Alva's Health Centre
+          — Dr. Mohan Alva, Chairman, AEF
         </p>
         <a
           href="/messages"

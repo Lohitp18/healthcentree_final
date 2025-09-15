@@ -18,7 +18,7 @@ import murali from "../images/murali.jpg";
 import mamatha from "../images/mamtha.jpg";
 import arvind from "../images/arind.jpg";
 import althaf from "../images/althaf.jpg";
-import padmanaba from "../images/dr padmanaba kamath.png";
+import padmanaba from "../images/padmanaba.png";
 import suhan from "../images/dr suhan alva.jpg";
 import chaitra from "../images/dr chaithra.jpg";
 import bhushan from "../images/dr bhushan.png";
@@ -28,7 +28,15 @@ import anchitha from "../images/dr anchitha.webp";
 import nihal from "../images/dr hihal.jpg";
 import arjun from "../images/arjun ballal.jpg";
 import noor from "../images/dr noor.jpg";
-
+import dithesh from "../images/dithesh.png";
+import janardhan from "../images/Janardhan.png";
+import keerthan from "../images/Keerthan.png";
+import praveenjshetty from "../images/praveenjshetty.png";
+import ragavendra from "../images/ragavendra.png";
+import rakshithkedambody from"../images/rakshithkedambody.png";
+import sandhyarani from "../images/sandhyarani.png";
+import mnbhat from"../images/mnbhat.png";
+import narasimha from "../images/narasimha.png";
 
 import React, { useState, useMemo } from "react";
 import {
@@ -245,7 +253,7 @@ const doctorsData = [
     specialization: "Consultant ENT, Head and Neck Surgeon",
     department: "ENT",
     type: "in-house",
-    image: suhan,
+    image: sushan,
     experience: "13+ years",
     rating: 4.8,
     languages: ["English", "Hindi", "Kannada"],
@@ -359,7 +367,7 @@ const doctorsData = [
     specialization: "Dermatologist",
     department: "Dermatology",
     type: "on-call",
-    image:vinay,
+    image:srikanth,
     experience: "14+ years",
     rating: 4.7,
     languages: ["English", "Hindi", "Kannada"],
@@ -447,7 +455,7 @@ const doctorsData = [
     specialization: "Cardiologist",
     department: "Cardiology",
     type: "visiting",
-    image: srikanth,
+    image: narasimha,
     experience: "22+ years",
     rating: 4.9,
     languages: ["English", "Hindi", "Kannada"],
@@ -461,7 +469,7 @@ const doctorsData = [
     specialization: "Cardiologist",
     department: "Cardiology",
     type: "visiting",
-    image: srikanth,
+    image: praveenjshetty,
     experience: "20+ years",
     rating: 4.8,
     languages: ["English", "Hindi", "Kannada"],
@@ -475,7 +483,7 @@ const doctorsData = [
     specialization: "Cardiologist",
     department: "Cardiology",
     type: "visiting",
-    image: srikanth,
+    image: mnbhat,
     experience: "18+ years",
     rating: 4.8,
     languages: ["English", "Hindi", "Kannada"],
@@ -489,7 +497,7 @@ const doctorsData = [
     specialization: "Cardiologist",
     department: "Cardiology",
     type: "visiting",
-    image: srikanth,
+    image: dithesh,
     experience: "16+ years",
     rating: 4.7,
     languages: ["English", "Hindi", "Kannada"],
@@ -503,7 +511,7 @@ const doctorsData = [
     specialization: "Cardiologist",
     department: "Cardiology",
     type: "visiting",
-    image: srikanth,
+    image: sandhyarani,
     experience: "14+ years",
     rating: 4.6,
     languages: ["English", "Hindi", "Kannada"],
@@ -533,7 +541,7 @@ const doctorsData = [
     specialization: "Neurologist",
     department: "Neurology",
     type: "visiting",
-    image: srikanth,
+    image: rakshithkedambody,
     experience: "15+ years",
     rating: 4.8,
     languages: ["English", "Hindi", "Kannada"],
@@ -547,7 +555,7 @@ const doctorsData = [
     specialization: "Neurologist",
     department: "Neurology",
     type: "visiting",
-    image: srikanth,
+    image: ragavendra,
     experience: "19+ years",
     rating: 4.9,
     languages: ["English", "Hindi", "Kannada"],
@@ -591,7 +599,7 @@ const doctorsData = [
     specialization: "Nephrologist / Renal Specialist",
     department: "Nephrology",
     type: "visiting",
-    image: srikanth,
+    image: janardhan,
     experience: "16+ years",
     rating: 4.8,
     languages: ["English", "Hindi", "Kannada"],
@@ -825,7 +833,7 @@ const doctorsData = [
     specialization: "Pulmonologist",
     department: "Pulmonology",
     type: "visiting",
-    image: srikanth,
+    image: keerthan,
     experience: "14+ years",
     rating: 4.7,
     languages: ["English", "Hindi", "Kannada"],

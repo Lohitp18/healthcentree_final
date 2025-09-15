@@ -40,8 +40,31 @@ import ContactPage30 from './pages/medicine/Paediatrics';
 import ContactPage31 from './pages/medicine/PainPalliativeCare';
 import ContactPage32 from './pages/medicine/Psychiatry';
 import ContactPage33 from './pages/medicine/Radiology';
-import Service from './pages/Services';
+import ContactPage34 from  './pages/medicine/Historyofmedicine';
+import ContactPage35 from   './pages/medicine/Plasticsurgery';
+import ContactPage36 from   './pages/medicine/Pulmonology';
+import ContactPage37 from   './pages/medicine/Anesthesiology';
 
+
+import Pharmacy from './pages/parmacy';
+import Ultrasoundscanning from './pages/ultrasoundscanning';
+import HomeVisit from'./pages/homevisit';
+import Laboratory from './pages/laboratory';
+import Mortuary from './pages/mortuary'
+import NICU from './pages/nicu';
+import Otandlt from './pages/otandlt';
+import Parkingservices from './pages/parkingservices';
+import Ecg from './pages/ecg';
+import Emergencyandtraumacare from './pages/emergencyandtraumacare';
+import Endoscopy from './pages/endoscopy';
+import Healthcard from './pages/healthcard';
+import Healthinsurance from './pages/healthinsurance';
+import Healthpackage from './pages/healthpackage';
+import Bloodbank from './pages/bloodbank';
+import Cafeteria from './pages/cafeteria';
+import Dailysis from './pages/dailysis';
+import Alvasfitnesszone from './pages/alvasfitnesszone';
+import Service from './pages/Services';
 
 
 
@@ -91,7 +114,7 @@ function App() {
               <Route path="/ent" element={<ContactPage20 />} />
               <Route path="/generalmedicine" element={<ContactPage21 />} />
               <Route path="/generalsurgery" element={<ContactPage22 />} />
-              <Route path="/nephrology" element={<ContactPage23 />} />
+              <Route path="/nephrologyurology" element={<ContactPage23 />} />
               <Route path="/neurology" element={<ContactPage24 />} />
               <Route path="/neurosurgery" element={<ContactPage25 />} />
               <Route path="/obstrics" element={<ContactPage26 />} />
@@ -102,14 +125,39 @@ function App() {
               <Route path="/pain" element={<ContactPage31 />} />
               <Route path="/psychitary" element={<ContactPage32 />} />
               <Route path="/radio" element={<ContactPage33 />} />
+              <Route path="/historyofmedicine" element={<ContactPage34/>} />
+              <Route path="/plasticsurgery" element={<ContactPage35 />} />
+               <Route path="/pulmonology" element={<ContactPage36 />} />
+              <Route path="/anesthesiology" element={<ContactPage37 />} />
+
+
+              
+
+
               <Route path="/services" element={<Service />} />
               <Route path="/about" element={<Abouts />} />
               <Route path="/vision" element={<Vision />} />
               <Route path="/messages" element={<Messages />} />
-              
-
-              
-              
+              <Route path="/emergencyandtraumacare" element={<Emergencyandtraumacare/>} />
+              <Route path="/parmacy" element={<Pharmacy/>} />
+              <Route path="/laboratory" element={<Laboratory/>} /> 
+              <Route path="/ecg" element={<Ecg/>} />
+              <Route path="/otandlt" element={<Otandlt/>} />
+              <Route path="/dailysis" element={<Dailysis/>} />
+              <Route path="/bloodbank" element={<Bloodbank/>} />
+              <Route path="/nicu" element={<NICU/>} />
+              <Route path="/endoscopy" element={<Endoscopy/>} />
+              {/* <Route path="/ambulanceservices" element={<Ambulanceservices/>} /> */}
+              <Route path="/parkingservices" element={<Parkingservices/>} /> 
+              <Route path="/mortuary" element={<Mortuary/>} /> 
+               <Route path="/ultrasoundscanning" element={<Ultrasoundscanning/>} />
+              <Route path="/healthcard" element={<Healthcard/>} />
+              <Route path="/healthpackage" element={<Healthpackage/>} />
+              <Route path="/healthinsurance" element={<Healthinsurance/>} />
+              <Route path="/alvasfitnesszone" element={<Alvasfitnesszone/>} />
+              <Route path="/homevisit" element={<HomeVisit/>} />
+              {/* <Route path="/atmservices" element={<Atmservices/>} /> */}
+              <Route path="/cafeteria" element={<Cafeteria/>} />
 
             </Routes>
 
