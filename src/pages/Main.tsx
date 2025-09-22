@@ -350,73 +350,66 @@ const QuickLinks = () => (
       <h2 className="text-3xl font-bold text-gray-900 mb-4">Quick Access</h2>
       <p className="text-gray-600">Easy access to our most popular services and information</p>
     </div>
-    
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <a href="/doctor" className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group text-center">
-        <Users className="mx-auto mb-4 text-blue-600 group-hover:scale-110 transition-transform" size={48} />
-        <h3 className="text-xl font-bold text-gray-900 mb-2">Our Doctors</h3>
-        <p className="text-gray-600 text-sm">Meet our expert medical team</p>
-      </a>
-      
-      <a href="/services" className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group text-center">
-        <Heart className="mx-auto mb-4 text-red-500 group-hover:scale-110 transition-transform" size={48} />
-        <h3 className="text-xl font-bold text-gray-900 mb-2">Our Services</h3>
-        <p className="text-gray-600 text-sm">Comprehensive medical care</p>
-      </a>
-      
-      <a href="/appointment" className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group text-center">
-        <Clock className="mx-auto mb-4 text-green-500 group-hover:scale-110 transition-transform" size={48} />
-        <h3 className="text-xl font-bold text-gray-900 mb-2">Book Appointment</h3>
-        <p className="text-gray-600 text-sm">Schedule your consultation</p>
-      </a>
-      
-      <a href="/emergency" className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group text-center">
-        <Shield className="mx-auto mb-4 text-red-600 group-hover:scale-110 transition-transform" size={48} />
-        <h3 className="text-xl font-bold text-gray-900 mb-2">Emergency Care</h3>
-        <p className="text-gray-600 text-sm">24/7 emergency services</p>
-      </a>
-    </div>
-  </Section>
-);
 
-
-const ServicesHighlights = () => (
-  <Section id="services" className="bg-white">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl font-bold text-gray-900 mb-4">Comprehensive Services</h2>
-      <p className="text-gray-600">From prevention to advanced treatment and rehabilitation</p>
-    </div>
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      {[{
-        icon: Stethoscope,
-        title: 'General Medicine',
-        desc: 'Primary and preventive care for all ages',
-        href: '/medicine/GeneralMedicine'
-      },{
-        icon: Heart,
-        title: 'Cardiology',
-        desc: 'Advanced heart care and interventions',
-        href: '/medicine/Cardiology'
-      },{
-        icon: Brain,
-        title: 'Neurology',
-        desc: 'Brain and nervous system care',
-        href: '/medicine/Neurology'
-      },{
-        icon: Shield,
-        title: 'Emergency Care',
-        desc: '24/7 emergency and trauma services',
-        href: '/emergencyandtraumacare'
-      }].map((s, i) => (
-        <a key={i} href={s.href} className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition group">
-          <s.icon className="text-blue-600 mb-4 group-hover:scale-110 transition" size={36} />
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">{s.title}</h3>
-          <p className="text-gray-600 text-sm">{s.desc}</p>
+      {[
+        { icon: Users, title: "Our Doctors", desc: "Meet our expert medical team", href: "/doctor", color: "blue" },
+        { icon: Heart, title: "Our Services", desc: "Comprehensive medical care", href: "/services", color: "red" },
+        { icon: Clock, title: "Our Departments", desc: "", href: "/department", color: "green" },
+        { icon: Shield, title: "Emergency Care", desc: "24/7 emergency services", href: "/contact", color: "yellow" }
+      ].map((item, i) => (
+        <a
+          key={i}
+          href={item.href}
+          className={`relative group bg-gradient-to-tr from-${item.color}-100 to-${item.color}-200 p-6 rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl`}
+        >
+          <div className="absolute -top-6 -right-6 w-24 h-24 bg-white/20 rounded-full filter blur-2xl"></div>
+          <item.icon className={`mx-auto mb-4 text-${item.color}-600 group-hover:scale-110 transition-transform duration-300`} size={48} />
+          <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+          <p className="text-gray-700 text-sm">{item.desc}</p>
         </a>
       ))}
     </div>
   </Section>
 );
+
+const ServicesHighlights = () => (
+  <Section id="services" className="bg-gradient-to-b from-blue-50 to-white">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Comprehensive Services</h2>
+      <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+        From prevention to advanced treatment and rehabilitation, we provide expert care across multiple specialties.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {[
+        { icon: Stethoscope, title: 'General Medicine', desc: 'Primary and preventive care for all ages', href: '/medicine/GeneralMedicine', colorFrom: 'blue-400', colorTo: 'blue-600' },
+        { icon: Heart, title: 'Cardiology', desc: 'Advanced heart care and interventions', href: '/medicine/Cardiology', colorFrom: 'red-400', colorTo: 'red-600' },
+        { icon: Brain, title: 'Neurology', desc: 'Brain and nervous system care', href: '/medicine/Neurology', colorFrom: 'purple-400', colorTo: 'purple-600' },
+        { icon: Shield, title: 'Emergency Care', desc: '24/7 emergency and trauma services', href: '/emergencyandtraumacare', colorFrom: 'yellow-400', colorTo: 'yellow-500' },
+      ].map((s, i) => (
+        <a
+          key={i}
+          href={s.href}
+          className={`group relative bg-white/60 backdrop-blur-md border border-gray-200 rounded-3xl p-8 shadow-lg transform transition-all duration-300 hover:-translate-y-3 hover:scale-105 hover:shadow-2xl`}
+        >
+          <div className={`w-20 h-20 rounded-full mx-auto mb-6 bg-gradient-to-tr from-${s.colorFrom} to-${s.colorTo} flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110`}>
+            <s.icon className="text-white" size={32} />
+          </div>
+          <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2 text-center transition-colors duration-300 group-hover:text-blue-600">
+            {s.title}
+          </h3>
+          <p className="text-gray-700 text-center text-sm lg:text-base opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+            {s.desc}
+          </p>
+        </a>
+      ))}
+    </div>
+  </Section>
+);
+
+
 
 const FacilitiesShowcase = () => (
   <Section id="facilities" className="bg-gray-50">
@@ -448,7 +441,7 @@ const MapSection = () => (
     <div className="rounded-2xl overflow-hidden shadow">
       <iframe
         title="Hospital Location"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.948483950989!2d74.986!3d13.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAlva%27s%20Health%20Centre!5e0!3m2!1sen!2sin!4v1700000000000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.4793726565235!2d74.98991007512456!3d13.068776987255552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4aaec8dfc9f6f%3A0xaceae732368a07bd!2sAlva&#39;s%20Health%20Centre!5e0!3m2!1sen!2sin!4v1758515417375!5m2!1sen!2sin"
         width="100%"
         height="420"
         style={{ border: 0 }}
@@ -460,24 +453,7 @@ const MapSection = () => (
   </Section>
 );
 
-const ContactCTA = () => (
-  <Section id="appointment" className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-none">
-    <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-      <div>
-        <h2 className="text-3xl font-bold mb-2">Need Medical Assistance?</h2>
-        <p className="text-blue-100">Call our helpline or book an appointment online.</p>
-      </div>
-      <div className="flex gap-3">
-        <a href="tel:+919999999999" className="inline-flex items-center px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg shadow hover:shadow-lg transition">
-          <Phone size={18} className="mr-2" /> +91 99999 99999
-        </a>
-        <a href="/appointment" className="inline-flex items-center px-6 py-3 bg-blue-800 hover:bg-blue-900 text-white font-semibold rounded-lg transition">
-          Book Appointment
-        </a>
-      </div>
-    </div>
-  </Section>
-);
+
 
 const App = () => {
   return (
@@ -487,10 +463,10 @@ const App = () => {
       <About />
       <Messages />
       <QuickLinks />
-      <ServicesHighlights />
+      {/* <ServicesHighlights /> */}
       <FacilitiesShowcase />
       <MapSection />
-      <ContactCTA />
+      
     </>
   );
 };

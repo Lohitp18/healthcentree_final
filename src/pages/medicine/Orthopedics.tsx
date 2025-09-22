@@ -5,44 +5,43 @@ import ot from "../../images/Ot3.jpg";
 const Orthopedics = () => {
   return (
     <div className="p-8 max-w-5xl mx-auto bg-gray-50 rounded-lg shadow-md space-y-10 font-serif">
+
+      {/* Banner Image */}
       <div className="rounded-xl overflow-hidden shadow">
-        <img src={ot} alt="Orthopedics" className="w-full h-56 object-cover" />
+        <img src={ot} alt="Orthopedics & Trauma" className="w-full h-56 object-cover" />
       </div>
-      {/* <h1 className="text-4xl font-extrabold text-blue-700 border-b-4 border-blue-500 pb-3 mb-6">
-        ORTHOPEDICS
-      </h1>
 
-      <section className="bg-white p-6 rounded-lg shadow-sm">
-        <p className="text-gray-800 text-lg leading-relaxed tracking-wide">
-          Our team of orthopedic surgeons, physiotherapists, and rehabilitation specialists provides comprehensive care for patients of all ages. From fractures and joint replacements to sports injuries and arthritis management, we offer personalized treatment plans tailored to each individual's needs. With a focus on restoring mobility and improving quality of life, we're dedicated to helping you regain function and live pain-free.
-        </p>
-      </section> */}
-
+      {/* Overview */}
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <h2 className="bg-blue-900 text-white text-4xl font-extrabold px-4 py-2 mb-6 block w-full">
-          OVERVIEW - ORTHOPEDICS
+          OVERVIEW - ORTHOPEDICS & TRAUMA
         </h2>
         <p className="text-gray-700 text-lg leading-relaxed tracking-wide mb-6">
-          The Department of Orthopedics specializes in the diagnosis, treatment, and prevention of disorders and injuries of the bones, joints, muscles, ligaments, tendons, and spine. Orthopedic specialists provide both surgical and non-surgical care to restore mobility, reduce pain, and improve quality of life.
+          The Department of Orthopedics at Alva’s Health Centre specializes in the diagnosis, treatment, and management of bone, joint, muscle, and ligament disorders. 
+          Our team provides both surgical and non-surgical care, trauma management, and rehabilitation to restore mobility, reduce pain, and enhance quality of life.
         </p>
+      </section>
 
+      {/* Common Conditions */}
+      <section className="bg-white p-6 rounded-lg shadow-sm">
         <h3 className="text-2xl font-semibold text-blue-600 mb-3">Common Conditions Treated</h3>
         <ul className="list-disc list-inside ml-6 space-y-2 text-gray-700 leading-relaxed tracking-wide">
-          <li>Fractures and dislocations</li>
+          <li>Fractures, dislocations, and ligament injuries</li>
           <li>Osteoarthritis and rheumatoid arthritis</li>
           <li>Back and spine disorders (slipped disc, scoliosis, spinal stenosis)</li>
           <li>Sports injuries (ligament tears, meniscus injuries, tendonitis)</li>
           <li>Osteoporosis and bone health disorders</li>
           <li>Congenital deformities (clubfoot, hip dysplasia)</li>
           <li>Joint and cartilage problems</li>
-          <li>Shoulder, elbow, wrist, hip, knee, and ankle disorders</li>
+          <li>Upper and lower limb disorders (shoulder, elbow, wrist, hip, knee, ankle)</li>
           <li>Carpal tunnel syndrome</li>
           <li>Musculoskeletal infections and tumors</li>
         </ul>
       </section>
 
+      {/* Services */}
       <section className="bg-white p-6 rounded-lg shadow-sm">
-        <h3 className="text-2xl font-semibold text-blue-600 mb-3">Services Provided by the Orthopedics Department</h3>
+        <h3 className="text-2xl font-semibold text-blue-600 mb-3">Services Provided</h3>
 
         <div className="mb-6">
           <h4 className="text-xl font-semibold text-blue-500 mb-2">Diagnostic Services</h4>
@@ -84,6 +83,8 @@ const Orthopedics = () => {
           </ul>
         </div>
       </section>
+
+      {/* Treatments & Procedures */}
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <h3 className="text-3xl font-semibold text-blue-600 mb-3">Treatments & Procedures</h3>
         <ul className="list-disc list-inside ml-6 space-y-2 text-gray-700 leading-relaxed tracking-wide">
@@ -91,14 +92,18 @@ const Orthopedics = () => {
           <li>Arthroscopy for knee, shoulder, ankle</li>
           <li>Trauma care: fracture fixation and ligament repair</li>
           <li>Spine surgery: discectomy, fusion, deformity correction</li>
-          <li>Sports injury management and rehab</li>
+          <li>Sports injury management and rehabilitation</li>
         </ul>
       </section>
 
+      {/* Doctors */}
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <h3 className="text-3xl font-semibold text-blue-600 mb-3">Our Doctors</h3>
         <div className="grid sm:grid-cols-2 gap-6">
-          {[{ name: 'Dr. Krishna B', role: 'Orthopedic Surgeon', img: require('../../images/dr krishna.jpg') }, { name: 'Dr. Arun Bhat', role: 'Consultant Orthopedics', img: require('../../images/dr arun bhat.jpg') }].map((d: any, i: number) => (
+          {[
+            { name: 'Dr. Krishna B', role: 'Orthopedic Surgeon', img: require('../../images/dr krishna.jpg') },
+            { name: 'Dr. Arun Bhat', role: 'Consultant Orthopedics', img: require('../../images/dr arun bhat.jpg') }
+          ].map((d: any, i: number) => (
             <div key={i} className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border">
               <img src={d.img} alt={d.name} className="w-20 h-20 object-cover rounded-full shadow" />
               <div>

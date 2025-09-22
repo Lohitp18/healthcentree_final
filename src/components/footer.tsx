@@ -81,37 +81,27 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-bold mb-6 text-white">Contact Information</h4>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <MapPin className="text-blue-400 mt-1 flex-shrink-0" size={18} />
-                <div className="text-sm text-gray-300">
-                  <p>123 Healthcare Avenue</p>
-                  <p>Medical District, City - 560001</p>
-                  <p>Karnataka, India</p>
-                </div>
-              </div>
-              
+            <div className="space-y-4 text-gray-300 text-sm">
               <div className="flex items-start space-x-3">
                 <Phone className="text-blue-400 mt-1 flex-shrink-0" size={18} />
-                <div className="text-sm text-gray-300">
-                  <p className="font-semibold text-red-400">Emergency: +91 9876543210</p>
-                  <p>Appointments: +91 9876543211</p>
-                  <p>General Inquiry: +91 9876543212</p>
+                <div className="space-y-1">
+                  <p><strong>Hospital No:</strong> 08258-238104, 238111</p>
+                  <p><strong>Emergency No:</strong> 08258-236666</p>
+                  <p><strong>Mobile:</strong> 8105998557</p>
+                  <p><strong>Public Relations Officer:</strong> 8296981049</p>
+                  <p><strong>Patient Coordinator:</strong> 6361828430</p>
+                  <p><strong>Labour Room:</strong> 8296533959</p>
+                  <p><strong>Ambulance No:</strong> 8105998557</p>
+                  <p><strong>Pincode:</strong> 574227</p>
                 </div>
               </div>
-              
-              <div className="flex items-center space-x-3">
-                <Mail className="text-blue-400 flex-shrink-0" size={18} />
-                <p className="text-sm text-gray-300">info@alvashealthcare.com</p>
-              </div>
-              
               <div className="flex items-start space-x-3">
-                <Clock className="text-blue-400 mt-1 flex-shrink-0" size={18} />
-                <div className="text-sm text-gray-300">
-                  <p className="font-semibold text-green-400">Emergency: 24/7</p>
-                  <p>OPD: 8:00 AM - 8:00 PM</p>
-                  <p>Visiting Hours: 4:00 PM - 7:00 PM</p>
-                </div>
+                <MapPin className="text-blue-400 mt-1 flex-shrink-0" size={18} />
+                <p>Alva's Health Centre, Moodbidri, Karnataka, India</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Mail className="text-blue-400 mt-1 flex-shrink-0" size={18} />
+                <p>info@alvashealthcare.com</p>
               </div>
             </div>
           </div>
@@ -120,21 +110,12 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-gray-400">
-              <p>© 2024 Alva's Healthcare. All rights reserved.</p>
-              <div className="flex items-center space-x-4">
-                <a href="#" className="hover:text-blue-400 transition-colors">Privacy Policy</a>
-                <a href="#" className="hover:text-blue-400 transition-colors">Terms of Service</a>
-                <a href="#" className="hover:text-blue-400 transition-colors">Sitemap</a>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2 text-sm text-gray-400">
-              <span>Made with</span>
-              <Heart className="text-red-500" size={16} />
-              <span>for better healthcare</span>
-            </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
+          <p>© 2024 Alva's Healthcare. All rights reserved.</p>
+          <div className="flex items-center space-x-2">
+            <span>Made with</span>
+            <Heart className="text-red-500" size={16} />
+            <span>for better healthcare</span>
           </div>
         </div>
       </div>

@@ -9,12 +9,8 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Only show when at the very top
-      if (window.scrollY <= 0) {
-        setShowNavbar(true);
-      } else {
-        setShowNavbar(false);
-      }
+      if (window.scrollY <= 0) setShowNavbar(true);
+      else setShowNavbar(false);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -49,42 +45,22 @@ const Navbar: React.FC = () => {
       {/* Main Navigation */}
       <div className="w-full bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center py-4 sm:h-24">
-            
+          <div className="flex justify-center items-center py-4 sm:h-24 space-x-4">
             {/* Logo */}
-            <div className="flex justify-center sm:justify-start items-center mb-2 sm:mb-0">
-              <img
-                src={logo}
-                alt="Alva's Logo"
-                className="h-20 w-14 sm:h-16 sm:w-16  "
-              />
-            </div>
+            <img
+              src={logo}
+              alt="Alva's Logo"
+              className="h-20 w-20 sm:h-20 sm:w-20"
+            />
 
-            {/* Center Title */}
+            {/* Title */}
             <div className="text-center">
-              <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-blue-900 font-serif">
+              <h1 className="text-2xl sm:text-3xl font-bold text-blue-900 font-serif">
                 Alva's Health Centre
               </h1>
               <p className="text-sm sm:text-base text-gray-600">
                 Excellence in Healthcare Since 1985
               </p>
-            </div>
-
-            {/* Buttons */}
-            <div className="flex flex-col sm:flex-row items-center mt-3 sm:mt-0 space-y-2 sm:space-y-0 sm:space-x-3">
-              <a
-                href="#emergency"
-                className="inline-flex items-center justify-center bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 w-full sm:w-auto"
-              >
-                Emergency
-              </a>
-              <a
-                href="#appointment"
-                className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 w-full sm:w-auto"
-              >
-                <Phone size={18} />
-                <span>Book Appointment</span>
-              </a>
             </div>
           </div>
         </div>

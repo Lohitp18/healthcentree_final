@@ -10,10 +10,32 @@ const Anesthesiology = () => {
       </h1>
 
       {/* Introduction */}
-      <section className="bg-white p-6 rounded-lg shadow-sm">
+      <section className="bg-white p-6 rounded-lg shadow-sm space-y-4">
         <p className="text-gray-800 text-lg leading-relaxed tracking-wide">
-          The Department of Anesthesiology provides comprehensive medical services focused on the safe administration of anesthesia and the management of pain before, during, and after surgical or medical procedures.
+          <strong>Anesthesiology at Alva’s Health Centre</strong> focuses on providing safe and
+          effective pain relief and anesthesia services for patients undergoing surgeries and
+          procedures. The department ensures patient comfort, monitors vital signs, and supports
+          recovery before, during, and after surgery.
         </p>
+        <p className="text-gray-800 text-lg leading-relaxed tracking-wide">
+          The Department of Anesthesiology provides comprehensive medical services focused on the
+          safe administration of anesthesia and the management of pain before, during, and after
+          surgical or medical procedures.
+        </p>
+      </section>
+
+      {/* Key Highlights */}
+      <section className="bg-white p-6 rounded-lg shadow-sm">
+        <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-b border-blue-200 pb-2">
+          Key Highlights
+        </h2>
+        <ul className="list-disc list-inside ml-6 space-y-2 text-gray-700 leading-relaxed tracking-wide">
+          <li><strong>Pre-operative Assessment:</strong> Thorough evaluation to ensure patient safety.</li>
+          <li><strong>General & Regional Anesthesia:</strong> Tailored to the type of surgery and patient needs.</li>
+          <li><strong>Sedation Services:</strong> For minor procedures and diagnostic tests.</li>
+          <li><strong>Post-operative Care:</strong> Pain management and monitoring during recovery.</li>
+          <li><strong>Critical Care Support:</strong> Assistance in ICU and emergency situations.</li>
+        </ul>
       </section>
 
       {/* Core Services */}
@@ -79,7 +101,9 @@ const Anesthesiology = () => {
       {/* Summary */}
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <p className="text-gray-800 text-lg leading-relaxed tracking-wide font-semibold">
-          The Department of Anesthesiology plays a central role in patient safety, pain management, and perioperative care, extending its expertise from the operating room to intensive care units, labor & delivery suites, pain clinics, and beyond.
+          The Department of Anesthesiology plays a central role in patient safety, pain management,
+          and perioperative care, extending its expertise from the operating room to intensive care
+          units, labor & delivery suites, pain clinics, and beyond.
         </p>
       </section>
     </div>

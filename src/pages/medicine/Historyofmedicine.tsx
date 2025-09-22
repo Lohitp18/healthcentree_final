@@ -6,49 +6,83 @@ const HistoryOfMedicine = () => {
     <div className="p-8 max-w-5xl mx-auto bg-gray-50 rounded-lg shadow-md space-y-10 font-serif">
       {/* Heading */}
       <h1 className="bg-blue-900 text-white text-4xl font-extrabold px-4 py-2 mb-6 block w-full">
-        OVERVIEW - HISTORY OF MEDICINE
+        HISTORY OF ALVA’S HEALTH CENTRE
       </h1>
 
-      {/* Intro Section */}
-      <section className="bg-white p-6 rounded-lg shadow-sm">
-        <p className="text-gray-800 text-lg leading-relaxed tracking-wide">
-          The Department of History of Medicine at St. John’s Medical College was established in 1964 by Prof. Emeritus Major General S. L. Bhatia (Retd.), upon the invitation of Dr. L. Monteiro, the founding Dean. Since its inception, the Department has served as a center of interdisciplinary inquiry and education, blending historical scholarship with the practice of modern medicine.
-        </p>
-      </section>
-
-      {/* Objectives Section */}
+      {/* Key Origins & Early Steps */}
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-b border-blue-200 pb-2">
-          Objectives
+          Key Origins & Early Steps
         </h2>
         <ul className="list-disc list-inside ml-6 space-y-2 text-gray-700 leading-relaxed tracking-wide">
-          <li>Foster a community of scholars and enthusiasts interested in the history of medicine.</li>
-          <li>Organize lectures, discussions, and exhibitions with a special focus on Indian medical traditions.</li>
-          <li>Curate and maintain a unique library and archive to support interdisciplinary historical research.</li>
+          <li>
+            <strong>1980:</strong> Dr. M. Mohan Alva started an Ayurvedic clinic in Moodubidire to
+            serve rural health needs, especially common local issues such as snake bites.
+          </li>
+          <li>
+            <strong>1982:</strong> Alva’s Pharmacy was founded to produce medicines locally to meet
+            demand.
+          </li>
+          <li>
+            <strong>1986 (May 31):</strong> Alva’s Health Centre was formally established as a
+            full-fledged multi-speciality hospital to provide affordable and quality healthcare in
+            and around Moodbidri, for people who otherwise had to travel long distances (30–40 km or
+            more).
+          </li>
         </ul>
       </section>
 
-      {/* Museum Section */}
+      {/* Expansion of Medical Services & Facilities */}
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-b border-blue-200 pb-2">
-          S. L. Bhatia Museum of the History of Medicine
+          Expansion of Medical Services & Facilities
         </h2>
-        <p className="text-gray-800 text-lg leading-relaxed tracking-wide mb-4">
-          In 1974, the Department established the pioneering S. L. Bhatia Museum of the History of Medicine. The museum houses an exceptional collection of books, journals, medical artefacts, and illustrations donated by General Bhatia. Originally envisioned in the 1950s as part of a collaboration with the Government of Mysore, the museum found its home at St. John’s Medical College, where it continues to be a vital educational resource.
-        </p>
-        <p className="text-gray-800 text-lg leading-relaxed tracking-wide">
-          General Bhatia’s bequest remains the heart of the museum, continually enriched by additional contributions over the years.
-        </p>
+        <ul className="list-disc list-inside ml-6 space-y-2 text-gray-700 leading-relaxed tracking-wide">
+          <li>
+            The hospital has grown to about <strong>200–300 beds</strong>, serving multiple
+            specialties.
+          </li>
+          <li>
+            Developed a <strong>broad multi-speciality service department</strong>: General Medicine,
+            Surgery (including endoscopic/laparoscopic), Orthopaedics, Obstetrics & Gynaecology,
+            Paediatrics, ENT, Ophthalmology, Cardiology, Neurology, Nephrology, Dermatology,
+            Psychiatry, Dental care, and more.
+          </li>
+          <li>
+            <strong>Critical care facilities:</strong> ICU, Surgical ICU (SICU), NICU, Emergency &
+            Trauma Care.
+          </li>
+          <li>
+            <strong>Diagnostics & Imaging:</strong> CT Scan, Ultrasound, X-ray, PFT (Pulmonary
+            Function Test), ECG, and ECHO.
+          </li>
+        </ul>
       </section>
 
-      {/* Annual Oration Section */}
+      {/* Integration with Traditional Medicine & Education */}
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-b border-blue-200 pb-2">
-          Major General S. L. Bhatia Memorial Oration
+          Integration with Traditional Medicine & Education
         </h2>
-        <p className="text-gray-800 text-lg leading-relaxed tracking-wide">
-          A highlight of the academic calendar, the annual Major General S. L. Bhatia Memorial Oration invites distinguished scholars to share their insights into the history of medicine and the broader medical humanities. This oration carries forward General Bhatia’s legacy of inquiry, education, and intellectual exchange.
-        </p>
+        <ul className="list-disc list-inside ml-6 space-y-2 text-gray-700 leading-relaxed tracking-wide">
+          <li>
+            <strong>1996:</strong> Establishment of <strong>Alva’s Ayurveda Medical College &
+            Hospital</strong> under Alva’s Education Foundation, expanding into Ayurvedic medicine.
+          </li>
+          <li>
+            The Ayurveda College began with undergraduate <strong>BAMS</strong> (Bachelor of
+            Ayurvedic Medicine & Surgery) and later added postgraduate specialties (e.g. Dravyaguna
+            Vijnana, Shalya Tantra) from around 2006 onwards.
+          </li>
+          <li>
+            The college developed a hospital component (IPD wards, OPDs) giving students hands-on
+            clinical exposure, alongside associated modern hospital services.
+          </li>
+          <li>
+            A facility called <strong>“Shubhadhama”</strong> was also created for mental health,
+            integrating Ayurveda, Yoga, and Naturopathy approaches.
+          </li>
+        </ul>
       </section>
     </div>
   );

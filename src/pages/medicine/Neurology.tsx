@@ -9,102 +9,75 @@ const Neurology = () => {
       <div className="rounded-xl overflow-hidden shadow">
         <img src={brainImg} alt="Neurology" className="w-full h-56 object-cover" />
       </div>
-<h1 className="bg-blue-900 text-white text-4xl font-extrabold px-4 py-2 mb-6 block w-full">
-          OVERVIEW - NEUROLOGY
+
+      {/* Page Title */}
+      <h1 className="bg-blue-900 text-white text-4xl font-extrabold px-4 py-2 mb-6 block w-full">
+        NEUROLOGY
       </h1>
 
+      {/* Overview */}
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <p className="text-gray-800 text-lg leading-relaxed tracking-wide">
-          The Department of Neurology is dedicated to the diagnosis, treatment, and management of disorders affecting the brain, spinal cord, nerves, and muscles. Neurologists provide comprehensive care for both acute and chronic neurological conditions, using advanced diagnostic techniques and evidence-based treatments.
+          The Department of Neurology at Alva’s Health Centre is dedicated to the diagnosis,
+          treatment, and rehabilitation of neurological conditions affecting the brain, spinal cord,
+          nerves, and muscles. With the support of visiting consultants, an in-house rehabilitation
+          unit, and advanced diagnostic facilities, patients receive comprehensive and compassionate care.
         </p>
       </section>
 
+      {/* Key Features */}
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-b border-blue-200 pb-2">
-          Common Conditions Treated
+          Key Features
         </h2>
         <ul className="list-disc list-inside ml-6 space-y-2 text-gray-700 leading-relaxed tracking-wide">
-          <li>Headache disorders (migraines, cluster headaches, tension headaches)</li>
-          <li>Epilepsy and seizures</li>
-          <li>Stroke and transient ischemic attacks (TIAs)</li>
-          <li>Multiple sclerosis (MS)</li>
-          <li>Parkinson’s disease and other movement disorders</li>
-          <li>Dementia and Alzheimer’s disease</li>
-          <li>Neuropathy (including diabetic neuropathy)</li>
-          <li>Brain and spinal cord injuries</li>
-          <li>Muscular disorders (myasthenia gravis, muscular dystrophy)</li>
-          <li>Sleep disorders (narcolepsy, restless legs syndrome, sleep apnea with neurological causes)</li>
+          <li><strong>Speciality:</strong> Neurology is one of the core specialties offered at Alva’s.</li>
+          <li><strong>Visiting Neurologists:</strong> Experts such as Dr. Rakshith Kedambadi, Dr. Raghavendra BS, Dr. Suhan Alva, and Dr. Chaitra are available on scheduled days.</li>
+          <li><strong>Rehabilitation Support:</strong> A well-equipped Physiotherapy & Rehabilitation Department manages neurological recovery along with orthopedic cases.</li>
+          <li><strong>Pain Clinic:</strong> Provides care for nerve pain and chronic neurological pain through therapies and medications.</li>
+          <li><strong>Diagnostics:</strong> Imaging and lab services including CT scans support timely neurological evaluation.</li>
         </ul>
       </section>
 
+      {/* Services & Facilities */}
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-b border-blue-200 pb-2">
-          Services Provided by the Neurology Department
+          Services & Facilities
         </h2>
-
-        <div className="mb-6">
-          <h3 className="text-2xl font-semibold text-blue-500 mb-2">Neurological Examinations</h3>
-          <ul className="list-disc list-inside ml-6 text-gray-700 leading-relaxed tracking-wide">
-            <li>Reflex, coordination, sensation, strength, and mental status testing</li>
-          </ul>
-        </div>
-
-        <div className="mb-6">
-          <h3 className="text-2xl font-semibold text-blue-500 mb-2">Diagnostic Testing</h3>
-          <ul className="list-disc list-inside ml-6 text-gray-700 leading-relaxed tracking-wide">
-            <li>MRI & CT scans</li>
-            <li>EEG (electroencephalogram)</li>
-            <li>EMG (electromyography)</li>
-            <li>Lumbar puncture (spinal tap)</li>
-            <li>Blood tests for neurological disorders</li>
-          </ul>
-        </div>
-
-        <div className="mb-6">
-          <h3 className="text-2xl font-semibold text-blue-500 mb-2">Medical Management</h3>
-          <ul className="list-disc list-inside ml-6 text-gray-700 leading-relaxed tracking-wide">
-            <li>Prescription medications for seizures, migraines, and movement disorders</li>
-            <li>Long-term management for chronic neurological diseases (MS, Parkinson’s, epilepsy)</li>
-          </ul>
-        </div>
-
-        <div className="mb-6">
-          <h3 className="text-2xl font-semibold text-blue-500 mb-2">Pain Management</h3>
-          <ul className="list-disc list-inside ml-6 text-gray-700 leading-relaxed tracking-wide">
-            <li>Treatment for nerve pain, chronic headaches, and neuropathic pain</li>
-          </ul>
-        </div>
-
-        <div className="mb-6">
-          <h3 className="text-2xl font-semibold text-blue-500 mb-2">Rehabilitation Support</h3>
-          <ul className="list-disc list-inside ml-6 text-gray-700 leading-relaxed tracking-wide">
-            <li>Collaboration with physiotherapists, occupational therapists, and speech therapists</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 className="text-2xl font-semibold text-blue-500 mb-2">Preventive Care</h3>
-          <ul className="list-disc list-inside ml-6 text-gray-700 leading-relaxed tracking-wide">
-            <li>Stroke prevention and risk factor management</li>
-            <li>Cognitive decline monitoring and memory clinics</li>
-          </ul>
-        </div>
-      </section>
-      <section className="bg-white p-6 rounded-lg shadow-sm">
-        <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-b border-blue-200 pb-2">Treatments & Procedures</h2>
         <ul className="list-disc list-inside ml-6 space-y-2 text-gray-700 leading-relaxed tracking-wide">
-          <li>Stroke thrombolysis and post-stroke rehabilitation</li>
-          <li>Comprehensive epilepsy management</li>
-          <li>Movement disorder clinics (Parkinson’s, dystonia)</li>
-          <li>Headache clinics and pain management</li>
-          <li>Neuroimmunology and demyelinating disease care</li>
+          <li>Comprehensive evaluation and management of neurological disorders.</li>
+          <li>Physiotherapy & Rehabilitation for post-stroke, spinal cord injury, and nerve-related conditions.</li>
+          <li>Pain Clinic for chronic headaches, neuropathic pain, and nerve-related issues.</li>
+          <li>Diagnostic imaging and laboratory support (CT, EEG, EMG, lab tests).</li>
+          <li>Specialist consultations through visiting neurologist schedules.</li>
         </ul>
       </section>
 
+      {/* Strengths */}
       <section className="bg-white p-6 rounded-lg shadow-sm">
-        <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-b border-blue-200 pb-2">Our Doctors</h2>
+        <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-b border-blue-200 pb-2">
+          Strengths of the Neurology Department
+        </h2>
+        <ul className="list-disc list-inside ml-6 space-y-2 text-gray-700 leading-relaxed tracking-wide">
+          <li>In-house rehabilitation ensures holistic recovery for neurological patients.</li>
+          <li>Advanced diagnostics like CT scans and lab support aid accurate and early detection.</li>
+          <li>Visiting neurologists provide diverse expertise across subspecialties.</li>
+          <li>Pain Clinic adds value for managing chronic neurological pain effectively.</li>
+        </ul>
+      </section>
+
+      {/* Doctors */}
+      <section className="bg-white p-6 rounded-lg shadow-sm">
+        <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-b border-blue-200 pb-2">
+          Our Neurologists & Consultants
+        </h2>
         <div className="grid sm:grid-cols-2 gap-6">
-          {[{ name: 'Dr. Suhan Alva', role: 'Consultant Neurologist', img:brainImg }, { name: 'Dr. Suyog', role: 'Neurology Specialist', img: brainImg }].map((d: any, i: number) => (
+          {[
+            { name: "Dr. Rakshith Kedambadi", role: "Consultant Neurologist", img: brainImg },
+            { name: "Dr. Raghavendra BS", role: "Consultant Neurologist", img: brainImg },
+            { name: "Dr. Suhan Alva", role: "Consultant Neurologist", img: brainImg },
+            { name: "Dr. Chaitra", role: "Visiting Neurologist", img: brainImg }
+          ].map((d: any, i: number) => (
             <div key={i} className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border">
               <img src={d.img} alt={d.name} className="w-20 h-20 object-cover rounded-full shadow" />
               <div>

@@ -4,15 +4,16 @@ import React from 'react';
 const PlasticSurgery = () => {
   return (
     <div className="p-8 max-w-5xl mx-auto bg-gray-50 rounded-lg shadow-md space-y-10 font-serif">
+
       {/* Heading */}
       <h1 className="bg-blue-900 text-white text-4xl font-extrabold px-4 py-2 mb-6 block w-full">
         OVERVIEW - PLASTIC SURGERY
       </h1>
 
-      {/* Intro */}
+      {/* Introduction */}
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <p className="text-gray-800 text-lg leading-relaxed tracking-wide">
-          The Department of Plastic Surgery specializes in reconstructive, cosmetic, and corrective surgeries aimed at restoring form and function, as well as enhancing physical appearance. Our surgeons manage patients with congenital deformities, traumatic injuries, burns, and aesthetic concerns using state-of-the-art surgical and non-surgical techniques.
+          The Department of Plastic Surgery at Alva’s Health Centre offers comprehensive reconstructive and cosmetic services aimed at restoring form, function, and aesthetics. Our expert surgeons manage congenital deformities, traumatic injuries, burns, and aesthetic concerns using state-of-the-art surgical and non-surgical techniques tailored to each patient.
         </p>
       </section>
 
@@ -22,19 +23,19 @@ const PlasticSurgery = () => {
           Common Conditions & Cases Treated
         </h2>
         <ul className="list-disc list-inside ml-6 space-y-2 text-gray-700 leading-relaxed tracking-wide">
-          <li>Congenital deformities (cleft lip and palate, ear deformities, hand malformations)</li>
+          <li>Congenital deformities (cleft lip and palate, ear malformations, hand deformities)</li>
           <li>Post-trauma reconstruction (facial fractures, complex wounds)</li>
           <li>Burn injuries and scar contractures</li>
           <li>Skin and soft tissue tumors</li>
-          <li>Breast reconstruction after mastectomy</li>
+          <li>Breast reconstruction post-mastectomy</li>
           <li>Post-weight loss body contouring</li>
-          <li>Aesthetic and cosmetic concerns (nose, face, body reshaping)</li>
+          <li>Aesthetic and cosmetic enhancements (face, nose, body reshaping)</li>
           <li>Chronic non-healing wounds</li>
           <li>Pressure sores and diabetic ulcers</li>
         </ul>
       </section>
 
-      {/* Services */}
+      {/* Services Provided */}
       <section className="bg-white p-6 rounded-lg shadow-sm space-y-6">
         <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-b border-blue-200 pb-2">
           Services Provided by the Plastic Surgery Department
@@ -61,7 +62,7 @@ const PlasticSurgery = () => {
             <li>Liposuction and body contouring</li>
             <li>Breast augmentation, reduction, and lift</li>
             <li>Abdominoplasty (tummy tuck)</li>
-            <li>Botox and fillers</li>
+            <li>Botox and dermal fillers</li>
             <li>Laser treatments for skin rejuvenation and scars</li>
           </ul>
         </div>
@@ -98,6 +99,7 @@ const PlasticSurgery = () => {
           </ul>
         </div>
       </section>
+
     </div>
   );
 };

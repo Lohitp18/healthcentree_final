@@ -13,7 +13,7 @@ const Contact = () => {
     setLoading(true);
     setStatus(null);
     try {
-      const res = await fetch(GOOGLE_SCRIPT_URL, {
+      await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
         body: formData
@@ -30,9 +30,25 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50">
       <div className="max-w-6xl mx-auto px-6 py-12 grid lg:grid-cols-2 gap-10">
-        <div className="bg-white p-8 rounded-2xl shadow">
+        
+        {/* Contact Details + Form */}
+        <div className="bg-white p-8 rounded-2xl shadow space-y-6">
           <h1 className="text-3xl font-bold text-blue-900 mb-2">Contact Us</h1>
-          <p className="text-gray-600 mb-6">We’d love to hear from you. Fill the form and our team will get back.</p>
+          <p className="text-gray-600 mb-4">We’d love to hear from you. Fill the form and our team will get back.</p>
+          
+          {/* Hospital Contacts */}
+          <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-600 space-y-1">
+            <p><strong>Hospital No:</strong> 08258-238104, 238111</p>
+            <p><strong>Emergency No:</strong> 08258-236666</p>
+            <p><strong>Mobile:</strong> 8105998557</p>
+            <p><strong>Public Relations Officer:</strong> 8296981049</p>
+            <p><strong>Patient Coordinator:</strong> 6361828430</p>
+            <p><strong>Labour Room:</strong> 8296533959</p>
+            <p><strong>Ambulance:</strong> 8105998557</p>
+            <p><strong>Pincode:</strong> 574227</p>
+          </div>
+
+          {/* Contact Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label className="block text-sm text-gray-700 mb-1">Full Name</label>
@@ -58,6 +74,9 @@ const Contact = () => {
                   <option>Obstetrics & Gynecology</option>
                   <option>Paediatrics</option>
                   <option>Radiology</option>
+                  <option>Plastic Surgery</option>
+                  <option>Psychiatry</option>
+                  <option>Other</option>
                 </select>
               </div>
             </div>
@@ -71,10 +90,12 @@ const Contact = () => {
             {status && <p className="text-sm text-green-700 mt-2">{status}</p>}
           </form>
         </div>
+
+        {/* Google Map */}
         <div className="bg-white p-2 rounded-2xl shadow overflow-hidden">
           <iframe
             title="Hospital Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.948483950989!2d74.986!3d13.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAlva%27s%20Health%20Centre!5e0!3m2!1sen!2sin!4v1700000000000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.4793726565235!2d74.98991007512456!3d13.068776987255552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4aaec8dfc9f6f%3A0xaceae732368a07bd!2sAlva&#39;s%20Health%20Centre!5e0!3m2!1sen!2sin!4v1758515417375!5m2!1sen!2sin"
             width="100%"
             height="500"
             style={{ border: 0 }}
@@ -89,5 +110,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-
