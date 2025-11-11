@@ -1,6 +1,9 @@
 // src/pages/Neurology.tsx
 import React from 'react';
 import brainImg from "../../images/about.png";
+import chaitra from "../../images/neurologist/Dr. CHAITHRA S P.png"
+import ragavendra from "../../images/neurologist/Dr. RAGHAVENDRA B S.png"
+import rakshitha from "../../images/neurologist/Dr. RAKSHITHA C KEDAMBADY.png"
 
 const Neurology = () => {
   return (
@@ -73,10 +76,9 @@ const Neurology = () => {
         </h2>
         <div className="grid sm:grid-cols-2 gap-6">
           {[
-            { name: "Dr. Rakshith Kedambadi", role: "Consultant Neurologist", img: brainImg },
-            { name: "Dr. Raghavendra BS", role: "Consultant Neurologist", img: brainImg },
-            { name: "Dr. Suhan Alva", role: "Consultant Neurologist", img: brainImg },
-            { name: "Dr. Chaitra", role: "Visiting Neurologist", img: brainImg }
+            { name: "Dr. Rakshith Kedambadi", role: "Consultant Neurologist", img: chaitra },
+            { name: "Dr. Raghavendra BS", role: "Consultant Neurologist", img: ragavendra },
+            { name: "Dr. Chaitra", role: "Visiting Neurologist", img: rakshitha }
           ].map((d: any, i: number) => (
             <div key={i} className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border">
               <img src={d.img} alt={d.name} className="w-20 h-20 object-cover rounded-full shadow" />

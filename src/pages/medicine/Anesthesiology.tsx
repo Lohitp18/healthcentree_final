@@ -1,5 +1,7 @@
 // src/pages/Anesthesiology.tsx
 import React from 'react';
+import mamatha from '../../images/Anesthesiology/dr mamatha.png';
+import swarna from '../../images/Anesthesiology/Dr Swarnarekha.webp';
 
 const Anesthesiology = () => {
   return (

@@ -110,9 +110,7 @@ function DoctorCard({ doctor }: { doctor: any }) {
           <p className="flex items-center gap-1">
             <Languages size={14} /> {doctor.languages.join(", ")}
           </p>
-          <p className="flex items-center gap-1">
-            <Wallet size={14} /> {doctor.consultationFee}
-          </p>
+          
         </div>
       </div>
     </Card>

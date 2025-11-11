@@ -1,8 +1,11 @@
 // src/pages/Cardiology.tsx
 import React from 'react';
-import ecg1 from "../../images/ecg1.jpg";
-import narayan from "../../images/dr-narayan-bhat-m-consultant-cardiology.jpg";
-import padmanaba from "../../images/padmanaba.png";
+import ecg1 from "../../images/about.png"
+import ditesh from "../../images/cardiology/Dr. DITHESH M.png";
+import praveen from "../../images/cardiology/Dr. PRAVEEN J SHETTY.png";
+import mnbhat from "../../images/cardiology/Dr.M.N BHAT.png";
+import narasimaha from "../../images/cardiology/Dr.NARASIMHA PAI.png";
+import  padmanaba from "../../images/cardiology/Dr.PADMANABHA KAMATH.png";
 
 const Cardiology = () => {
   return (
@@ -51,9 +54,11 @@ const Cardiology = () => {
         <div className="grid sm:grid-cols-2 gap-6">
           {[ 
             { name: 'Dr. Padmanabha Kamath', role: 'Senior Cardiologist', img: padmanaba },
-            { name: 'Dr. Narasimha Pai', role: 'Visiting Cardiologist', img: '' },
-            { name: 'Dr. Praveen J. Shetty', role: 'Interventional Cardiologist', img: '' },
-            { name: 'Dr. Narayan Bhat M', role: 'Consultant Cardiologist', img: narayan }
+            { name: 'Dr. Narasimha Pai', role: 'Visiting Cardiologist', img: narasimaha },
+            { name: 'Dr. Praveen J. Shetty', role: 'Interventional Cardiologist', img: praveen },
+            { name: 'Dr. Narayan Bhat M', role: 'Consultant Cardiologist', img: mnbhat },
+            { name: 'Dr. DITHESH M', role: 'Senior Cardiologist', img: ditesh },
+
           ].map((d, i) => (
             <div key={i} className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border">
               {d.img ? (

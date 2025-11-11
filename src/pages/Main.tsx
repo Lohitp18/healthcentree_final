@@ -5,6 +5,9 @@ import about from "../images/about.png"
 import chairman from "../images/chairman.webp"
 import ot1 from "../images/Ot1.jpg"
 import blood2 from "../images/blood2.jpg"
+import video1 from "../images/WhatsApp Video 2025-09-22 at 15.44.23_cc70274c.mp4"
+import video2 from "../images/WhatsApp Video 2025-09-22 at 15.44.27_6874f7f9.mp4"
+import video3 from "../images/WhatsApp Video 2025-09-22 at 15.44.33_69008b68.mp4"
 
 const Section = ({ id, className = '', children }: { 
   id: string; 
@@ -432,6 +435,22 @@ const FacilitiesShowcase = () => (
   </Section>
 );
 
+const VideosSection = () => (
+  <Section id="videos" className="bg-white">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold text-gray-900 mb-4">Highlights</h2>
+      <p className="text-gray-600">A quick look at our facilities and services</p>
+    </div>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {[video1, video2, video3].map((src, i) => (
+        <div key={i} className="bg-gray-50 rounded-2xl overflow-hidden shadow">
+          <video src={src} controls className="w-full h-64 object-cover" />
+        </div>
+      ))}
+    </div>
+  </Section>
+);
+
 const MapSection = () => (
   <Section id="map" className="bg-white">
     <div className="text-center mb-8">
@@ -462,6 +481,7 @@ const App = () => {
       <Hero />
       <About />
       <Messages />
+      <VideosSection />
       <QuickLinks />
       {/* <ServicesHighlights /> */}
       <FacilitiesShowcase />

@@ -1,6 +1,8 @@
 // src/pages/medicine/Dermatology.tsx
 import React from 'react';
 import skinImg from "../../images/images.jpg";
+import anchita from "../../images/dermatology/dr anchitha.webp"
+import nihal from "../../images/dermatology/Dr. NIHAL XAVIER PINTO.png"
 
 const Dermatology = () => {
   return (
@@ -106,8 +108,8 @@ const Dermatology = () => {
         </h2>
         <div className="grid sm:grid-cols-2 gap-6">
           {[ 
-            { name: 'Dr. Nihal', role: 'Dermatology Specialist', img: require('../../images/dr_nihal.jpg') },
-            { name: 'Dr. Anchitha', role: 'Dermatology Consultant', img: require('../../images/dr_anchitha.jpg') }
+            { name: 'Dr. Nihal', role: 'Dermatology Specialist', img: nihal},
+            { name: 'Dr. Anchitha', role: 'Dermatology Consultant', img: anchita }
           ].map((d: any, i: number) => (
             <div key={i} className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border">
               <img src={d.img} alt={d.name} className="w-20 h-20 object-cover rounded-full shadow" />

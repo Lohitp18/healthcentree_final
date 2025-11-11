@@ -1,7 +1,8 @@
 // src/pages/ObstetricsGynecology.tsx
 import React from 'react';
-import nicu from "../../images/nicu1.jpg";
-import suhitha from "../../images/dr suhitha.jpg";
+import hana from "../../images/obstetrics and gynaecology/DR HANA SHETTY.webp";
+import ramesha from "../../images/obstetrics and gynaecology/DR RAMESHA.webp";
+import revathi from "../../images/obstetrics and gynaecology/DR REVATHI BHAT.webp";
 
 const ObstetricsGynecology = () => {
   return (
@@ -43,7 +44,7 @@ const ObstetricsGynecology = () => {
       <section className="bg-white p-6 rounded-lg shadow-sm">
         <h2 className="text-3xl font-semibold text-blue-600 mb-4 border-b border-blue-200 pb-2">Our Doctors</h2>
         <div className="grid sm:grid-cols-2 gap-6">
-          {[{ name: 'Dr. Suhitha', role: 'Consultant Obstetrician & Gynecologist', img: suhitha }].map((d, i) => (
+          {[{ name: 'Dr. Suhitha', role: 'Consultant Obstetrician & Gynecologist', img: hana }].map((d, i) => (
             <div key={i} className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border">
               <img src={d.img} alt={d.name} className="w-20 h-20 object-cover rounded-full shadow" />
               <div>

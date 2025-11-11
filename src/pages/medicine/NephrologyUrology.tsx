@@ -1,6 +1,7 @@
 // src/pages/medicine/NephrologyUrology.tsx
 import React from 'react';
 import dialysis from "../../images/dialysis.png";
+import bhushan from "../../images/nephrologist/Dr.Bhushan c shetty.png"
 
 const NephrologyUrology = () => {
   return (

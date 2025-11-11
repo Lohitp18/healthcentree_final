@@ -1,5 +1,6 @@
 // src/pages/DentalSurgery.tsx
 import React from 'react';
+import reenaz from "../../images/dental surgery/Dr Reenaz Begum.webp";
 
 const DentalSurgery = () => {
   return (
